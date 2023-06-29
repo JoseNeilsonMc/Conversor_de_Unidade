@@ -5,16 +5,42 @@
     font-size: Arial;
 }
 body{
-    background-color: #f4f4f4;
-    display: flex;
+    display: block;
+
+}
+header{
+    display:flex;
     align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+img{
+    width: 300px;
+    margin-left: 0;
+}
+ul, li{
+    display: flex;
+    margin: 10px;
+}
+.logo{
+    font-size: 40px;
+    margin-right: 8%;
+}
+.linkedin,.whats,.email{
+    width: 40px;
+}
+section{
+    background-color:#d2d2d2;
+    display:flex;
+    align-items:center;
     justify-content: center;
     height: 100vh;
 }
 .container{
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border:5px double green;
+    box-shadow: 10px 10px 15px rgba(1, 31, 1,0.9);
     padding: 1.5rem;
     width: 400px;
 }
@@ -39,7 +65,7 @@ input{
     border-radius: 5px;
     border: none;
     font-size: 1rem;
-    background-color: #eee;
+    background-color: #ccfcb7;
 }
 button{
     background-color: green;
@@ -53,6 +79,7 @@ button{
     transition: .4;
 }
 button:hover{
+    color:black;
     opacity: 1;
 }
 .output-group{

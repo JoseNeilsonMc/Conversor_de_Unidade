@@ -51,8 +51,17 @@ switch(fromValue) {
      break; 
     
  }
-    console.log(fromValue, toValue);
-    console.log(meters, result);
+// exibir menssagem no input
+outputElement.value = result;
+
+// exibir resultado na menssagem
+
+const fromLabel = fromElement.options[fromElement.selectedIndex].text;
+const toLabel = toElement.options[toElement.selectedIndex].text;
+
+const message = `${inputElement.value} ${fromLabel} equivalem a ${result} ${toLabel}`;
+messageElement.textContent = message;
+return;
 }
 
  convertButton.addEventListener("click", convert);
