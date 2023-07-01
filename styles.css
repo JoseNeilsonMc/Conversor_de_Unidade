@@ -10,17 +10,27 @@ body{
 }
 header{
     display:flex;
+    background-color: rgb(4, 191, 4);
     align-items: center;
     justify-content: center;
     justify-content: space-around;
 }
 img{
     width: 300px;
-    margin-left: 0;
+    margin-left: 2%;
 }
 ul, li{
     display: flex;
     margin: 10px;
+}
+ul li:hover{
+    transform: scale(1.25,1.25);
+    background-color: rgb(1, 88, 1);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px;
+}
+ul li:hover::after{
+    opacity: 1;
 }
 .logo{
     font-size: 40px;
@@ -34,7 +44,7 @@ section{
     display:flex;
     align-items:center;
     justify-content: center;
-    height: 100vh;
+    height: 78vh;
 }
 .container{
     background-color: #fff;
@@ -79,15 +89,34 @@ button{
     transition: .4;
 }
 button:hover{
+    transform: scale(1.10,1.10);
+    box-shadow: 2px 2px 5px;
     color:black;
     opacity: 1;
+
 }
 .output-group{
     margin-top: 1.2rem;
 }
 #message{
-    font-size: .8rem;
-    color: green;
+    font-size: 1.2rem;
+    color: rgb(7, 37, 7);
     margin-top: .7rem;
     text-align: center;
+}
+footer{
+    background-color: #333;
+    color:#fff;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+    margin:2px;
+    color: rgba(11, 255, 11, 0.871);
+    cursor: pointer;
+}
+a:hover{
+    color:black;
 }
